@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我要举报网</title>
+
+    <link href="/css/BW.css" rel="stylesheet">
+    <link href="/css/Common.css" rel="stylesheet">
+
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .body {
+            /*background-color: #0e4f00;*/
+            min-height: 100%;
+        }
+
+        .contentBody {
+            margin: 0 5px;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 40px;
+            font-weight: bold;
+            color: #FFFFFF;
+            padding: 30px 0px 5px 0px;
+        }
+
+        .middle {
+            border: 1px solid #67af63;
+            padding-bottom: 6px;
+        }
+
+        .middle .lbtn {
+            background-color: #67af63;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 18px;
+            margin: 0px 3px 0px 0px;
+            padding: 5px 0px;
+            display: block;
+        }
+
+        .middle .rbtn {
+            background-color: #67af63;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 18px;
+            margin: 0px 0px 0px 3px;
+            padding: 5px 0px;
+            display: block;
+        }
+
+        .middle .btn {
+            background-color: #67af63;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 18px;
+            /*margin: 6px 6px 0px 6px;*/
+            padding: 5px 0px;
+            display: block;
+        }
+
+        .middle .item {
+            margin: 6px 6px 0px 6px;
+        }
+
+        .middle .line {
+            margin: 6px 6px 0px 6px;
+            border-bottom: 1px dashed #67af63;
+        }
+    </style>
+</head>
+<body>
+<div class="body">
+    <div class="contentBody">
+        <div class="header">
+            <div class="title"><a href="/">承信网</a></div>
+        </div>
+        <div class="middle">
+            <div class="item">
+                <span class="col2"><a href="javascript:LoginWin()" class="lbtn">登录</a></span><span
+                    class="col2"><a
+                    href="javascript:RegisterWin()" class="rbtn">注册</a></span>
+            </div>
+            <div class="line"></div>
+            <form class="BWForm">
+                <div class="item">
+                <span class="col1">
+                <div class="FormGroup">
+                    <div class="FormLeft"><i class="fa fa-street-view"></i></div>
+                    <div class="FormInput">
+                        <input class="FormText" type="text" name="f_show_name"/>
+
+                        <div class="FormTip">昵称/ID</div>
+                    </div>
+                </div>
+            </span>
+                </div>
+                <div class="item">
+                    <span class="col1">
+        <div class="FormGroup">
+            <input class="FormSubmit" type="submit" title="查询" value="查询"/>
+        </div>
+                    </span>
+                </div>
+            </form>
+            <div class="line"></div>
+            <div class="item"><span class="col1"><a href="javascript:LoginWin()" class="btn">添加</a></span></div>
+        </div>
+    </div>
+    <div class="footer">
+        该网站版权&copy;归PPHT所有
+    </div>
+</div>
+</div>
+<!-- Scripts -->
+<script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+<script src="//cdn.bootcss.com/blueimp-md5/2.1.0/js/md5.min.js"></script>
+<script src="/js/BW.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/HomeIndex.js"></script>
+<script type="application/javascript">
+</script>
+</body>
+</html>

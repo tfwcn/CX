@@ -1,0 +1,353 @@
+@CHARSET "UTF-8";
+/*信息框*/
+.BWMsgBox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f3ffed;
+    display: none;
+}
+
+.BWMsgBox .item {
+    display: inline-block;
+    float: left;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid #3D7700;
+}
+/*Loading*/
+.BWLoading {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+.BWLoadingBG {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.BWLoadingItem {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 36px;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*弹出窗口*/
+.BWWinBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.BWWinBox .BWWinBoxHeader {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #3D7700;
+    display: block;
+    overflow: hidden;
+}
+
+.BWWinBox .BWWinBoxHeader .BWWinBoxReturn {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #67af63;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.BWWinBox .BWWinBoxHeader .BWWinBoxTitle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 20px;
+    /*font-weight: bold;*/
+    color: #FFFFFF;
+    background-color: #67af63;
+}
+
+.BWWinBox .BWWinBoxBody {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.BWWinBox .BWWinBoxBody .BWWinBoxLoad {
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 36px;
+    display: block;
+}
+
+/*表单样式*/
+.BWForm {
+}
+
+.BWForm .FormGroup {
+    display: block;
+    width: 100%;
+}
+
+.BWForm .FormGroup .FormLeft {
+    display: block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    width: 35px;
+    vertical-align: middle;
+    color: #3D7700;
+    border-bottom: 2px solid #3D7700;
+    text-align: center;
+    float: left;
+    padding-top: 5px;
+}
+
+.BWForm .FormGroup .FormInput {
+    display: block;
+    position: relative;
+    /*border-bottom: 2px solid #dddddd;*/
+    margin-left: 35px;
+    padding-top: 5px;
+}
+
+.BWForm .FormGroup .FormInput2 {
+    margin-right: 35px;
+}
+/*单行*/
+.BWForm .FormGroup .FormInput .FormText {
+    display: block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 0px none #FFFFFF;
+    width: 100%;
+    border-bottom: 2px solid #dddddd;
+}
+/*多行*/
+.BWForm .FormGroup .FormInput .FormTextMul {
+    display: block;
+    font-size: 14px;
+    height: 60px;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 0px none #FFFFFF;
+    width: 100%;
+    border-bottom: 2px solid #dddddd;
+}
+/*文本提示*/
+.BWForm .FormGroup .FormInput .FormTip {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    color: #777777;
+    width: 100%;
+    overflow: hidden;
+    cursor: text;
+}
+
+.BWForm .FormGroup .FormInput .FormInputItems {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 0px none #FFFFFF;
+    padding: 4px;
+    overflow: hidden;
+}
+
+.BWForm .FormGroup .FormInput .FormInputItems span {
+    display: inline-block;
+    border: 0px none #FFFFFF;
+    color: #FFFFFF;
+    background-color: #67af63;
+    padding: 4px;
+    float: left;
+    margin-left: 6px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.BWForm .FormGroup .FormRight {
+    display: block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    width: 35px;
+    vertical-align: middle;
+    color: #FFFFFF;
+    background-color: #67af63;
+    border-bottom: 2px solid #3D7700;
+    text-align: center;
+    float: right;
+    padding-top: 5px;
+}
+
+.BWForm .FormGroup .FormSubmit {
+    display: block;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-color: #67af63;
+    color: #FFFFFF;
+    width: 100%;
+    border: 0px none #FFFFFF;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/*列表*/
+.BWList {
+    margin: 6px;
+    border: 1px solid #67af63;
+    padding-bottom: 6px;
+}
+.BWList .ListItem {
+    margin: 6px 6px 0px 6px;
+}
+.BWList .ListLine {
+    margin: 6px 6px 0px 6px;
+    border-bottom: 1px dashed #67af63;
+}
+.BWList .ListBtn {
+    background-color: #67af63;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 0px;
+    display: block;
+}
+.BWList .ListLBtn {
+    background-color: #67af63;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    margin: 0px 3px 0px 0px;
+    padding: 5px 0px;
+    display: block;
+}
+.BWList .ListRBtn {
+    background-color: #42fdc0;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    margin: 0px 0px 0px 3px;
+    padding: 5px 0px;
+    display: block;
+}
+.BWList .ListTitle{
+    color: #3D7700;
+    font-size: 16px;
+    line-height: 20px;
+}
+.BWList .ListTitle2{
+    color: #3D7700;
+    font-size: 14px;
+    line-height: 18px;
+}
+.BWList .ListTitle3{
+    color: #b0b0b0;
+    font-size: 12px;
+    line-height: 16px;
+}
+.BWList .ListGroup {
+    margin-left: 10px;
+}
+.BWList .ListLink {
+    border-bottom: 1px solid #d1d1d1;
+    padding: 0px 10px;
+}
+/*下标签*/
+.BWTab{
+    background-color: #67af63;
+}
+.BWTab .TabItem{
+    /*border-top: 2px solid #3D7700;*/
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    background-color: #3D7700;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    position: relative;
+}
+.BWTab .TabSelectItem{
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    background-color: #67af63;
+    height: 40px;
+    position: relative;
+    text-shadow: 1px 1px 3px #333333;
+}
+.BWTab .TabItemIcon{
+    color: #FFFFFF;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center;
+}
+.BWTab .TabItemTitle{
+    color: #FFFFFF;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    text-align: center;
+}
+.BWTab .TabItemPoint {
+    padding: 2px;
+    min-width: 10px;
+    min-height: 10px;
+    line-height: normal;
+    font-size: 12px;
+    text-align: center;
+    border-radius:6px;
+    background-color: #ff565d;
+    color: #FFFFFF;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
